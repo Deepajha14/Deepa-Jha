@@ -1,0 +1,126 @@
+
+.home .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 22vw;
+    margin-bottom: 50px;
+}
+
+.home .content .wrapper {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.home .content .name {
+    white-space: nowrap;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 5px;
+}
+
+.home .content .staticTitle {
+    font-size: 100px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.home .content .staticTitle .hrLine {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+    margin-left: 20px;
+    width: 20vw;
+}
+
+.home .content .dynamicTitle {
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 100px;
+    width: fit-content;
+}
+
+.home .content .dynamicTitle li {
+    width: 100%;
+    z-index: -1;
+}
+
+@keyframes slider {
+    0%   {width: 0%; }
+    50% {width: 42%; }
+    100% {width: 0%;}
+}
+
+@keyframes fadeText {
+    0%   {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+  .home .content .dynamicTitle li span {
+    white-space: wrap;
+    background-image: linear-gradient(to right, #ffe1a0, #f67280, #ff729b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+  }
+
+  .home .content .dynamicTitle li span::before {
+    content: '';
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+  }
+
+.mask .bg {
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -3;
+}
+
+@media screen and (max-width: 1150px) {
+    .home .content{
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .mask .bg{
+        opacity: 50%;
+    }
+
+    .home .content .staticTitle {
+        font-size: 75px;
+    }
+
+    .home .content .dynamicTitle {
+        font-size: 75px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .home .content .name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+
+    .home .content .staticTitle {
+        font-size: 45px;
+    }
+
+    .home .content .dynamicTitle {
+        font-size: 45px;
+        line-height: 60px;
+    }
+}

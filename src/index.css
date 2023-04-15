@@ -1,13 +1,66 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  /* scroll-behavior: smooth; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: black;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8); 
+  border-radius: 50%;
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: rgb(233, 68, 123);  */
+  background: linear-gradient(rgb(235, 156, 182), rgb(241, 66, 124), rgb(235, 156, 182));
+  border-radius: 10px;
+  height: 200px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(241, 66, 124); 
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  margin-top: 40px;
+  background-color: transparent;
+  border: 3px solid palevioletred;
+  border-radius: 5px;
+  box-shadow: 0 0 22px 3px rgba(216, 112, 147, 0.65);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: palevioletred;
 }

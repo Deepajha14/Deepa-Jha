@@ -1,0 +1,49 @@
+.card .skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 13vw 20vh 18vw;
+}
+
+.skill-container .skill-header {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+.skill-container .skill-box {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.skill-box h2 {
+    margin-bottom: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.skill-box .skillset {
+    margin-bottom: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill-box .skillset abbr .techLogo {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    height: 100px;
+    width: auto;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.skill-box .skillset abbr .techLogo:hover{
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 8px 30px 1px rgba(255, 255, 255, 0.4);
+}

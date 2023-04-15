@@ -1,0 +1,164 @@
+.header{
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.header .logo{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.header .logo .logo-img{
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.header .logo .logo-img span {
+    font-weight: 600;
+    color: rgb(226, 89, 135);
+}
+
+.header .logo .logo-img .blink {
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: rgb(226, 89, 135);
+    }
+
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: rgb(226, 89, 135);
+        
+    }
+}
+
+.header .nav-menu{
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 70%;
+}
+
+.nav-menu li{
+    width: max-content;
+    padding: 10px;
+    transform: rotate(270deg);
+}
+
+.nav-menu li a{
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.23s cubic-bezier(1, 0, 0.58, 0.97);
+}
+
+.nav-menu li a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    top: 49%;
+    right: 0;
+    background: palevioletred;
+    transition: inherit;
+}
+
+.nav-menu a:hover:before{
+    left: 0;
+    width: 100%;
+}
+
+.header .social-links {
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .social-links .social{
+    margin: 5px 0;
+    width: 100%;
+}
+
+.header .hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 1040px), (max-height: 550px) {
+    .header {
+        width: 100vw;
+        height: 97px;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .header .logo {
+        height: 3.5rem;
+        width: auto;
+    }
+
+    .header .hamburger {
+        display: initial;
+        height: 3rem;
+        z-index: 1;
+    }
+
+    .header .hamburger .bars {
+        height: 100%;
+    }
+
+    .header .nav-menu {
+        width: 100vw;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        padding-top: 10vh;
+        padding-bottom: 30vh;
+        top: 0;
+        height: 100vh;
+        left: -100%;
+        transition: 0.5s;
+        backdrop-filter: blur(15px);
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .header .nav-menu.active {
+        left: 0;
+    }
+
+    .header .nav-menu li {
+        transform: rotate(0deg);
+        padding: 5px 10px;
+    }
+
+    .header .social-links {
+        padding: 2rem;
+        position: absolute;
+        top: 70vh;
+        height: 100vh;
+        left: -100%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        transition: 0.5s;
+        z-index: 6;
+    }
+
+    .header .social-links.active {
+        left: 0;
+    }
+}
