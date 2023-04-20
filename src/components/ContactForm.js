@@ -13,7 +13,7 @@ const [text, setText] = useState("");
       <p>Discuss a project or just want to say Hi? My inbox is open for all.</p>
       <div className="contact-container">
         <div className="contact-wrapper-left">
-          <img src={cartoon}></img>
+          <img src={cartoon} alt='Deepa Jha'></img>
         </div>
         <div className="contact-wrapper-right">
           <form action="mailto:deepadj1415@gmail.com" method='post' encType='text/plain'>
