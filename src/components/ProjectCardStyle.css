@@ -33,10 +33,10 @@
 .project-img {
     margin-left: 50px;
     object-fit: contain;
-    animation: jump 3s infinite;
+    /* animation: jump 3s infinite; */
     position: relative;
     top: 0px;
-    z-index: -2;
+    /* z-index: 0; */
     filter: drop-shadow(2px 10px 20px rgba(255, 255, 255, 0.32));
 }
 
@@ -59,7 +59,7 @@
     max-width: 650px;
     width: fit-content;
     height: auto;
-    z-index: -2;
+    /* z-index: -2; */
 }
 
 @media screen and (max-width: 1150px) {

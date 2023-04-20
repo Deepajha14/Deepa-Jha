@@ -1,17 +1,19 @@
 import React from 'react'
-import ProjectCard from '../components/ProjectCard'
+// import Home from './Home'
+// import ProjectCard from '../components/ProjectCard'
 
 export default function Projects() {
   return (
     <>
     <div>
-      <ProjectCard 
+      {/* <Home/> */}
+      {/* <ProjectCard 
       projectTitle = "My Portfolio V.2.0" 
       projectDesc = "This is the second version of my portfolio website. With this version, I wanted to keep the code as basic as possible but still make the site interactive" 
       btnName = "View Project"
-      projectLink = "https://github.com/Deepajha14/Touch-me-not-Card"
-      deployedProjectLink = "https://deepajha14.github.io/Touch-me-not-Card/"
-      projectImg = {require('../images/projectGlassmorphism.png')}
+      projectLink = "https://github.com/Deepajha14/Deepa-Jha"
+      deployedProjectLink = "https://deepajha.netlify.com/"
+      projectImg = {require('../images/projectPortfolio.png')}
       />
 
       <ProjectCard 
@@ -30,7 +32,7 @@ export default function Projects() {
       projectLink = "https://github.com/Deepajha14/Rog-Free"
       deployedProjectLink = "https://deepajha14.github.io/Rog-Free/"
       projectImg = {require('../images/projectRogfree.png')}
-      />
+      /> */}
     </div>
     </>
   )
