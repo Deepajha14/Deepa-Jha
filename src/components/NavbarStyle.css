@@ -104,6 +104,7 @@
         height: 97px;
         flex-direction: row;
         padding: 2rem;
+        z-index: 100;
     }
 
     .header .logo {
@@ -158,7 +159,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         transition: 0.5s;
-        z-index: 6;
+        z-index: 110;
     }
 
     .header .social-links.active {
