@@ -16,7 +16,7 @@ const [text, setText] = useState("");
           <img src={cartoon} alt='Deepa Jha'></img>
         </div>
         <div className="contact-wrapper-right">
-          <form action="https://formsubmit.co/deepadj1415@gmail.com" method='POST' encType='text/plain'>
+          <form action="https://formsubmit.co/9b8bbfc585d189f796806f63e3e31c5f@gmail.com" method='POST' encType='text/plain'>
             <input id='name' type='text' name='Name' placeholder='Full Name' onChange = {handleOnChange} required></input>
             <input id='email' type='email' name='Email' placeholder='Email ID' onChange = {handleOnChange} required></input>
             <textarea id='message' name='Message' rows='5' column='15' placeholder='Drop your message here.' onChange = {handleOnChange} required>{text}</textarea>
