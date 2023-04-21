@@ -16,10 +16,10 @@ const [text, setText] = useState("");
           <img src={cartoon} alt='Deepa Jha'></img>
         </div>
         <div className="contact-wrapper-right">
-          <form action="mailto:deepadj1415@gmail.com" method='post' encType='text/plain'>
-            <input id='name' type='text' name='Name' placeholder='Full Name' onChange = {handleOnChange}></input>
-            <input id='email' type='email' name='Email' placeholder='Email ID' onChange = {handleOnChange}></input>
-            <textarea id='message' name='Message' rows='5' column='15' placeholder='Drop your message here.' onChange = {handleOnChange}>{text}</textarea>
+          <form action="https://formsubmit.co/deepadj1415@gmail.com" method='POST' encType='text/plain'>
+            <input id='name' type='text' name='Name' placeholder='Full Name' onChange = {handleOnChange} required></input>
+            <input id='email' type='email' name='Email' placeholder='Email ID' onChange = {handleOnChange} required></input>
+            <textarea id='message' name='Message' rows='5' column='15' placeholder='Drop your message here.' onChange = {handleOnChange} required>{text}</textarea>
             <button className='btn' id='submitBtn' type="submit">Send Message</button>
           </form>
         </div>
