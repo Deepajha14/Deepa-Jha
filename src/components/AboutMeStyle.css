@@ -4,7 +4,7 @@
     margin-right: 13vw;
     margin-bottom: 10vh;
     margin-left: 18vw;
-    padding-top: 7vw;
+    padding-top: 80px;
 }
 
 .about-container .profile-photo {
@@ -75,8 +75,7 @@
 
 @media screen and (max-width: 1040px) {
     .about-window {
-        padding: 10vw;
-        padding-top: 20vw;
+        padding: 0 12vw;
     }
 
     .about-container {

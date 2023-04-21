@@ -29,8 +29,7 @@ export default function Navbar() {
         onClick={handleCLick}
       >
         <li>
-          {/* <Link to="/Projects">Projects</Link> */}
-          <HashLink to="/#project1">Projects</HashLink>
+          <HashLink to="/#Project">Projects</HashLink>
         </li>
         <li>
           <Link to="/About">About</Link>

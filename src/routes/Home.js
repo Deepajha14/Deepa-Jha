@@ -1,16 +1,16 @@
 import React from 'react'
 import HomeBanner from '../components/HomeBanner'
-// import Projects from '../routes/Projects'
 import ProjectCard from '../components/ProjectCard'
 import AboutMe from '../components/AboutMe'
+import ScrollToTop from '../components/ScrollToTop'
 
 export default function Home() {
   return (
     <div>
-      <div id='HomeBanner'><HomeBanner/></div>
-      {/* <div id='Projects'><Projects/></div> */}
+      <ScrollToTop/>
+      <HomeBanner/>
       <ProjectCard 
-      id = "project1"
+      id = "Project"
       projectTitle = "My Portfolio V.2.0" 
       projectDesc = "This is the second version of my portfolio website. With this version, I wanted to keep the code as basic as possible but still make the site interactive" 
       btnName = "View Project"

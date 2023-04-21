@@ -1,4 +1,3 @@
-
 .home .content {
     height: 100vh;
     display: flex;
@@ -10,8 +9,7 @@
 }
 
 .home .content .wrapper {
-    max-width: 900px;
-    padding: 20px;
+    width: 100%;
 }
 
 .home .content .name {
@@ -33,6 +31,7 @@
     align-items: center;
     height: fit-content;
     width: fit-content;
+
 }
 
 .home .content .staticTitle .hrLine {
@@ -46,6 +45,7 @@
     font-weight: 500;
     line-height: 100px;
     width: fit-content;
+
 }
 
 .home .content .dynamicTitle li {
@@ -87,40 +87,43 @@
     z-index: -3;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 950px) {
     .home .content{
-        justify-content: center;
         align-items: center;
-        padding: 3rem;
+        padding: 0 12vw;
     }
 
     .mask .bg{
-        opacity: 50%;
+        opacity: 40%;
     }
 
     .home .content .staticTitle {
-        font-size: 75px;
+        font-size: 90px;
     }
 
     .home .content .dynamicTitle {
-        font-size: 75px;
+        font-size: 90px;
     }
 
 }
 
 @media screen and (max-width: 700px) {
     .home .content .name {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 60px;
     }
 
     .home .content .staticTitle {
-        font-size: 45px;
+        font-size: 12vw;
+    }
+
+    .home .content .staticTitle .hrLine {
+        width: 22vw;
     }
 
     .home .content .dynamicTitle {
-        font-size: 45px;
+        font-size: 12vw;
         line-height: 60px;
     }
 }

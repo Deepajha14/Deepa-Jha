@@ -50,10 +50,18 @@
     margin-bottom: 25px;
     padding-left: 15px;
     font-size: 18px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    outline: none;
 }
 
 .contact-wrapper-right form input {
     height: 50px;
+}
+
+.contact-wrapper-right form input:focus, textarea:focus {
+    border: 2px solid #fff;
+    box-shadow: 0 0 18px 2px rgba(255, 255, 255, 0.6);
 }
 
 .contact-wrapper-right form textarea {
@@ -62,11 +70,19 @@
 
 
 @media screen and (max-width: 1040px), (max-height: 550px) {
+    .contact-window {
+        padding-top: 100px;
+    }
+
     .contact-wrapper-left {
         display: none;
     }
 
     .contact-wrapper-right {
         width: 100%;
+    }
+
+    .contact-wrapper-right form {
+        padding-left: 0;
     }
 }

@@ -8,7 +8,7 @@
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,23 +19,18 @@ body {
   width: 5px;
 }
 
-
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8); 
   border-radius: 50%;
   
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
-  /* background: rgb(233, 68, 123);  */
   background: linear-gradient(rgb(235, 156, 182), rgb(241, 66, 124), rgb(235, 156, 182));
   border-radius: 10px;
   height: 200px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(241, 66, 124); 
 }

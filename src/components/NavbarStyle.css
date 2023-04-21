@@ -101,7 +101,7 @@
 @media screen and (max-width: 1040px), (max-height: 550px) {
     .header {
         width: 100vw;
-        height: 97px;
+        height: 100px;
         flex-direction: row;
         padding: 2rem;
         z-index: 100;

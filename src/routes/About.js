@@ -7,8 +7,8 @@ export default function About() {
   return (
     <div>
       <ScrollToTop/>
-      <AboutMe/>
       <SkillCard/>
+      <AboutMe/>
     </div>
   )
 }
