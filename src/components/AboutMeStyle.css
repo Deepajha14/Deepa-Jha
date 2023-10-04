@@ -1,25 +1,20 @@
 .about-container {
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 13vw;
-    margin-bottom: 10vh;
-    margin-left: 18vw;
-    padding-top: 80px;
+    margin: 80px 13vw 0 18vw;
+    padding-top: 60px;
 }
 
-.about-container .profile-photo {
+.profile-photo {
     margin-left: 50px;
-    width: 200rem;
-    height: 60vw;
+    height: fit-content;
+    padding: 0;
 }
 
 .profile-photo .heading {
-    font-size: 25px;
-    font-weight: 500;
-    letter-spacing: 1.12px;
-    margin-top: 130px;
-    margin-bottom: 20px;
-    color: palevioletred;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 100px;
+    color: #F94892;
 }
 
 .profile-photo .img {
@@ -27,27 +22,35 @@
     z-index: -3;
 }
 
-.profile-photo .name {
-    font-size: 8vw;
-    font-weight: 700;
-    line-height: 8vw;
-    position: relative;
-    bottom: 50vw;
-    left: 95%;
-    width: 2vw;
+ .about-container .name {
+    line-height: 85px;
+    position: absolute;
+    right: 6.5vw;
+    padding-top: 75px;
+    width: 110px;
     overflow-wrap: break-word;
-    color: #fff;
+    color: #F94892;
     text-transform: uppercase;
     z-index: 0;
+    font-size: 100px;
+    font-family: 'Intro', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(-86deg, #ffe1a0  5%, #f67280 53%, #F94892 91%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: #2c2c2c;
 }
-
 
 .about-container .aboutMe-text {
     font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 1.28px;
-    line-height: 2rem;
+    font-weight: 200;
+    color: #fff;
     height: fit-content;
+}
+
+.aboutMe-text span {
+    color: #F94892;
 }
 
 .about-container .aboutMe-text h3 {
@@ -58,54 +61,54 @@
 }
 
 .about-container .aboutMe-text .resume {
-    color: palevioletred;
-    width: fit-content;
-    padding: 2px 5px;
-    border: 1px solid rgb(0, 0, 0);
-    border-bottom: 3px solid palevioletred;
-    transition: all 0.8s ease-in-out;
+    color: #F94892;
+    border-bottom: 2.5px solid #F94892;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    font-weight: 700;
 }
 
 .about-container .aboutMe-text .resume:hover {
-    border: 1px solid rgba(216, 112, 147, 0.6);
-    border-radius: 20px;
-    box-shadow: 0 5px 25px 0.5px rgba(216, 112, 147, 0.5);
-    border-bottom: 3px solid palevioletred;
+    transform: scale(1.04);
 }
 
-@media screen and (max-width: 1040px) {
-    .about-window {
-        padding: 0 12vw;
+@media screen and (max-width: 1150px) {
+    .about-container .aboutMe-text {
+        font-size: 16px;
     }
+    .about-container .name {
+        font-size: 80px;
+        width: 80px;
+        line-height: 70px;
+        right: 8vw;
+    }
+}
 
+@media screen and (max-width: 925px) {
     .about-container {
-        flex-direction: column-reverse;
-        align-items: center;
-        margin: 0;
-    }
-
-    .about-container .profile-photo {
-        margin: 0;
-        width: 100%;
-        height: 110vw;
-        padding: 20px;
-        display: flex;
         flex-direction: column;
-    }
-    
-    .profile-photo .heading {
-        font-size: 20px;
-        margin-top: 40px;
+        align-items: center;
     }
 
-    .profile-photo .img {
-        z-index: -2;
+    .heading, .about-container .name {
+        display: none;
     }
 
-    .profile-photo .name {
-        font-size: 15vw;
-        line-height: 15vw;
-        bottom: 90vw;
-        z-index: -1;
+    .about-container .aboutMe-text {
+        text-align: center;
+    }
+
+    .img {
+        display: none;
+        margin-top: 50px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-container {
+        margin-left: 9vw;
+        margin-top: 0;
+        padding-top: 70px;
     }
 }

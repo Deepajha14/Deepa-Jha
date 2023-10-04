@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./NavbarStyle.css";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-scroll";
 import {
   FaGithub,
   FaInstagram,
@@ -17,7 +16,13 @@ export default function Navbar() {
   return (
     <nav className="header">
       <div className="logo">
-        <Link to="/">
+        <Link 
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={30}
+        >
           <div className="logo-img">
             <span className="blink">&lt;</span>
             <span>&#47;</span>D<span className="blink">&gt;</span>
@@ -29,16 +34,43 @@ export default function Navbar() {
         onClick={handleCLick}
       >
         <li>
-          <HashLink to="/#Project">Projects</HashLink>
+          <Link
+          className="navLink"
+            activeClass="active"
+            to="project"
+            spy={true}
+            smooth={true}
+            duration={30}
+          >Projects</Link>
         </li>
         <li>
-          <Link to="/About">About</Link>
+          <Link
+          className="navLink"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={30}
+          >About</Link>
         </li>
         <li>
-          <Link to="/">Home</Link>
+          <Link
+          className="navLink" 
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            duration={30}>Skills</Link>
         </li>
         <li>
-          <Link to="/Contact">Contact</Link>
+          <Link
+          className="navLink"
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={30}
+          >Contact</Link>
         </li>
       </ul>
       <div className={click ? "social-links active" : "social-links"}>

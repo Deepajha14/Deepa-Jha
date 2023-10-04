@@ -6,11 +6,10 @@ import {SiVisualstudiocode, SiReact, SiReactrouter, SiBootstrap, SiFigma, SiInks
 import {TbBrandCss3, TbBrandJavascript, TbBrandHtml5} from "react-icons/tb";
 import {IoLogoWindows, IoLogoNpm} from "react-icons/io"
 
-export default function SkillCard(props) {
+export default function SkillCard({id}) {
   return (
     <>
-    <div className="card">
-        <div className="skill-container">
+        <div className="skill-container" id = {id}>
           <div className="skill-header">My Skills</div>
           <div className="skill-box">
             <h2>Languages</h2>
@@ -41,7 +40,6 @@ export default function SkillCard(props) {
             </div>            
           </div>
         </div>
-    </div>
     </>
 
   )

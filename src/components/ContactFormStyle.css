@@ -1,5 +1,6 @@
 .contact-window {
-    padding: 12vh 12vw;
+    margin-top: 80px;
+    padding: 20px 12vw 20px 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,35 +16,29 @@
     font-size: 16px;
     letter-spacing: 1px;
     word-spacing: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contact-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
 }
 
 .contact-wrapper-left {
-    width: 50%;
+    width: 450px;
     height: 100%;
 }
 
 .contact-wrapper-right {
     width: 50%;
-}
-
-.contact-wrapper-right form {
-    padding-left: 20px;
-    width: 100%;
-    height: 100%;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    align-items: center;
 }
 
-.contact-wrapper-right form input, textarea {
+.contact-wrapper-right input, textarea {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
@@ -55,23 +50,58 @@
     outline: none;
 }
 
-.contact-wrapper-right form input {
-    height: 50px;
+.contact-wrapper-right input {
+    height: 45px;
 }
 
-.contact-wrapper-right form input:focus, textarea:focus {
-    border: 2px solid #fff;
-    box-shadow: 0 0 18px 2px rgba(255, 255, 255, 0.6);
+.contact-wrapper-right input:focus, textarea:focus {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
-.contact-wrapper-right form textarea {
+.contact-wrapper-right textarea {
     padding-top: 12px;
 }
 
 
-@media screen and (max-width: 1040px), (max-height: 550px) {
+
+@media screen and (max-width: 1190px) {
+    .contact-wrapper-left {
+        max-width: 380px;
+        width: 100%;
+    }
+
+    .contact-wrapper-right input {
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .contact-wrapper-right textarea {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn#submitBtn {
+        margin-top: 0px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+
+@media screen and (max-width: 945px), (max-height: 550px) {
     .contact-window {
-        padding-top: 100px;
+        padding: 100px 18vw 20px 18vw;
+        margin: 0;
+    }
+
+    .contact-window h1 {
+        font-size: 40px;
+    }
+
+    .contact-window p {
+        font-size: 14px;
     }
 
     .contact-wrapper-left {
@@ -80,6 +110,7 @@
 
     .contact-wrapper-right {
         width: 100%;
+        padding: 0;
     }
 
     .contact-wrapper-right form {

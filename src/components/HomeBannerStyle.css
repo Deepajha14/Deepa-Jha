@@ -66,7 +66,7 @@
 
   .home .content .dynamicTitle li span {
     white-space: wrap;
-    background-image: linear-gradient(to right, #ffe1a0, #f67280, #ff729b);
+    background-image: linear-gradient(to right, #ffe1a0, #f67280, #F94892);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: -1;
@@ -88,11 +88,6 @@
 }
 
 @media screen and (max-width: 950px) {
-    .home .content{
-        align-items: center;
-        padding: 0 12vw;
-    }
-
     .mask .bg{
         opacity: 40%;
     }
@@ -107,7 +102,11 @@
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
+    .home .content{
+        align-items: center;
+        padding: 0 12vw;
+    }
     .home .content .name {
         font-size: 20px;
         font-weight: 600;
@@ -125,5 +124,9 @@
     .home .content .dynamicTitle {
         font-size: 12vw;
         line-height: 60px;
+    }
+
+    .hire {
+        font-size: 16px;
     }
 }

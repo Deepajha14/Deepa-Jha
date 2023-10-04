@@ -12,27 +12,12 @@
 }
 
 body {
-  background: black;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-}
 
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.8); 
-  border-radius: 50%;
-  
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(rgb(235, 156, 182), rgb(241, 66, 124), rgb(235, 156, 182));
-  border-radius: 10px;
-  height: 200px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(241, 66, 124); 
+  display: none;
 }
 
 ul {
@@ -43,19 +28,31 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid #F94892;
+  width: fit-content;
   padding: 15px 25px;
-  margin-top: 40px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  transition: all 0.35s ease-out;
   background-color: transparent;
-  border: 3px solid palevioletred;
-  border-radius: 5px;
-  box-shadow: 0 0 22px 3px rgba(216, 112, 147, 0.65);
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
-  background-color: palevioletred;
+  background-color: #F94892;
+  bottom: 12px;
+  box-shadow: 0 0 20px 1px rgba(205, 106, 139, 0.65);
+}
+
+.btn:active {
+  background-color: rgb(141, 33, 78);
+}
+
+@media  screen and (max-width: 750px) {
+  .btn {
+    font-size: 16px;
+  }
 }
