@@ -40,7 +40,8 @@
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;
     background-clip: text;
-    color: #2c2c2c;
+    /* color: #2c2c2c; */
+    color: black;
 }
 
 .about-container .aboutMe-text {

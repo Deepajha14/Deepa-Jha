@@ -36,7 +36,7 @@ function App() {
         className = "odd"
         projectTitle="Wiggles: Pet Care Made Easy"
         projectDesc="A one-stop solution for pet data management, automated vaccinations, QR-based lost pet recovery, and organizing pet playdates."
-        projectLink="https://wiggles.vercel.app"
+        projectLink="https://github.com/DevanshSahni/Wiggles"
         deployedProjectLink="https://wiggles.vercel.app"
         projectImg={require('./images/projectWiggles.jpg')}
       />
