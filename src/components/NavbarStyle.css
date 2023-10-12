@@ -7,8 +7,12 @@
     justify-content: space-between;
     padding: 20px 10px;
     padding-right: 0;
-    background: transparent;
+    /* background: transparent; */
     backdrop-filter: blur(3px);
+    z-index: 100;
+}
+.header .logo {
+    cursor: pointer;
 }
 
 .header .logo .logo-img{
@@ -60,18 +64,19 @@
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .nav-menu li .navLink:hover {
     color: #F94892;
 }
 
 .nav-menu li {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .nav-menu li:hover {
     color: #F94892;
-    transform: scale(1.15) rotate(270deg);
+    transform: scale(1.3) rotate(270deg);
 }
 
 .header .social-links {
@@ -83,7 +88,7 @@
 .header .social-links .social{
     margin: 5px 0;
     width: 100%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .header .hamburger {
@@ -91,7 +96,7 @@
 }
 
 .header .social-links .social:hover {
-    transform: scale(1.3);
+    transform: scale(1.5);
     fill: #F94892;
 }
 

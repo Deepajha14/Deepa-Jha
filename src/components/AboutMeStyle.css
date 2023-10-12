@@ -39,6 +39,7 @@
     background: -webkit-linear-gradient(-86deg, #ffe1a0  5%, #f67280 53%, #F94892 91%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;
+    background-clip: text;
     color: #2c2c2c;
 }
 
@@ -65,11 +66,11 @@
     border-bottom: 2.5px solid #F94892;
     transition: all 0.3s ease-in-out;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .about-container .aboutMe-text .resume:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 1150px) {

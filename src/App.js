@@ -7,10 +7,27 @@ import ProjectCard from './components/ProjectCard'
 import AboutMe from './components/AboutMe'
 import SkillCard from './components/SkillCard'
 import ContactForm from './components/ContactForm'
+import AnimatedCursor from "react-animated-cursor"
 
 
 function App() {
   return (
+    <>
+    <AnimatedCursor
+      color="#fff"
+      innerSize={8}
+      outerSize={50}
+      innerScale={1}
+      outerScale={2.2}
+      outerAlpha={0}
+      outerStyle={{
+        background: '#ffffff',
+        mixBlendMode: 'exclusion'
+      }}
+      innerStyle={{
+        backgroundColor: '#F94892'
+      }}
+    />
     <div>
       <Navbar />
       <HomeBanner id = "home"/>
@@ -25,7 +42,6 @@ function App() {
       />
 
       <ProjectCard
-        // className = "odd"
         projectTitle="Animated Card: featuring the latest glassmorphism trend"
         projectDesc="React JS provided me the flexibility needed to create an interactive card with a glass-like effect, which adds a sense of depth and dimension to the user interface"
         projectLink="https://github.com/Deepajha14/Touch-me-not-Card"
@@ -34,7 +50,7 @@ function App() {
       />
 
       <ProjectCard
-      className = "odd"
+        className = "odd"
         projectTitle="Rog-free: accessible anytime, anywhere"
         projectDesc="An approach to target and heal specific health conditions by transforming the living room into a yoga studio"
         projectLink="https://github.com/Deepajha14/Rog-Free"
@@ -46,6 +62,7 @@ function App() {
       <ContactForm id = 'contact' />
       <Footer />
     </div>
+    </>
   );
 }
 
