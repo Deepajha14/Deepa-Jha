@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Deepa's Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website! This is a showcase of my skills, and projects in the field of Software Development. <br/>
+Link- https://deepajha.netlify.app
+<br/> <br/>
+## Website Preview
+![image](https://github.com/Deepajha14/Deepa-Jha/assets/103725672/94807ec4-517c-4954-a8d4-dd072c35bbdc)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Feedback and Suggestions](#feedback-and-suggestions)
+- [Credits](#credits)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Hosting on Netlify:** The website is hosted on [`Netlify`](https://www.netlify.com) platform, ensuring a reliable and efficient hosting solution.
 
-### `npm test`
+- **Single Page Portfolio:** The portfolio is designed as a single page, offering convenient navigation to various sections, including:
+    - **Projects:** A comprehensive display of my key projects, demonstrating my technical skills and creativity.
+    - **About:** An in-depth profile providing insights into my background and interests. This section also includes a link to my **Resume**.
+    - **Skills:** A list of all my technical skills, including the programming languages, libraries, frameworks, and platforms I have worked with.
+    - **Contact:** A section to connect with me for potential collaborations, job opportunities, or any other inquiries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Tilt Hover Effect:** Implemented the [`react-parallax-tilt`](https://www.npmjs.com/package/react-parallax-tilt) library to apply a tilt hover effect on the React components, such as project images, adding an interactive touch to the portfolio.
 
-### `npm run build`
+- **Icons Integration:** Leveraged [`react-icons`](https://react-icons.github.io/react-icons/) to incorporate various icons throughout the website, enhancing the visual appeal and providing intuitive cues for different sections.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Animated Cursor:** Utilized [`react-animated-cursor`](https://www.npmjs.com/package/react-animated-cursor) to apply an animated cursor, creating a dynamic and engaging user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Dynamic Alerts:** Incorporated [`react-toastify`](https://www.npmjs.com/package/react-toastify) to display animated and appealing alerts, ensuring a user-friendly interface and effective communication with the visitors.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+Feel free to explore the website to gain insight into my skills, and projects. You can navigate through the pages using the navigation bar. If you find the website useful, consider starring this repository to show your support.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I welcome contributions that could enhance the functionality or visual appeal of this portfolio website. To contribute, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Fork the repository.
+2. Clone the forked repository to your local machine.
+3. Make necessary changes and improvements.
+4. Push your changes to your forked repository.
+5. Open a pull request, detailing the changes you've made.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ Please ensure that you provide proper attribution if you use this project as a template.
 
-## Learn More
+## Feedback and Suggestions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I am open to any valuable feedback or suggestions that could help improve this portfolio website. Please feel free to open an issue in the repository to share your thoughts and ideas.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⭐ Don't forget to **star this repository** if you find it useful!
 
-### Code Splitting
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The UI design of this website is inspired by the [portfolio](https://hamishw.com/) of Hamish Walton. While the base structure was drawn from his portfolio, I have innovatively customized and revamped the layout to reflect my personal style and give it a unique appearance. My heartfelt gratitude to [`Hamish Walton`](https://github.com/HamishMW) for the creative inspiration that has contributed to this unique presentation.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you ❤️ for visiting my portfolio website. Your support and feedback are greatly appreciated! 🙌🏻
